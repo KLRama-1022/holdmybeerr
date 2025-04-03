@@ -1,3 +1,10 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700,800,900');
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
 /* General Styles */
 * {
     margin: 0;
@@ -170,12 +177,7 @@ nav a:hover::after {
 
 /* Blog Grid */
 
-@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700,800,900');
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-}
+
 body{
 	font-family: 'Poppins', sans-serif;
 	font-weight: 400;
@@ -497,18 +499,6 @@ footer div {
         height: 150px;
     }
 
-    .contact-container {
-        width: 90%;
-    }
-}
-.dark-mode #contact {
-    background: #1a1a1a;
-}
-
-.dark-mode .contact-container {
-    background: rgba(50, 50, 50, 0.8);
-    color: #ccc;
-}
 
 .dark-mode input, 
 .dark-mode textarea {
