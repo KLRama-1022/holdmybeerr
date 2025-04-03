@@ -1,0 +1,524 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    transition: all 0.3s ease-in-out;
+}
+
+body {
+    background-color: #f8f8f8;
+    color: #333;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow-x: hidden;
+}
+
+/* Home/About Section */
+#home-about {
+    height: 100vh; /* Full viewport height */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    background-color: transparent;
+    color: #222;
+}
+
+.intro {
+    max-width: relative;
+}
+
+.intro h2 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+    font-family: 'Playfair Display', serif;
+}
+
+.intro p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    font-weight: 400;
+}
+
+/* Dark Mode */
+.dark-mode #home-about {
+    background: #222;
+    color: #f8f8f8;
+}
+
+
+/* Header Styling */
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    background-color: transparent;
+    color: white;
+    background: rgba(255, 255, 255);  /*Keeping the original opacity 
+    backdrop-filter: blur(10px); */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 4px 10px; /* Increased padding for better spacing */
+    z-index: 1000;
+}
+
+
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.5rem;
+    color: #222;
+    cursor: pointer;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #333;
+    font-size: 1rem;
+    font-weight: 600;
+    padding: 8px 15px;
+    border-radius: 5px;
+    position: relative;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #ff9800;
+}
+
+nav a::after {
+    content: "";
+    position: absolute;
+    bottom: -3px;
+    left: 50%;
+    width: 0%;
+    height: 2px;
+    background: #ff9800;
+    transition: width 0.3s ease;
+    transform: translateX(-50%); /* Center the line */
+}
+
+nav a:hover::after {
+    width: 100%;
+}
+/* Dark Mode Toggle */
+#dark-mode-toggle {
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+#dark-mode-toggle:hover {
+    transform: rotate(20deg);
+}
+
+/* Dark Mode Styles */
+.dark-mode {
+    background-color: #000000;
+    color: #f8f8f8;
+}
+
+.dark-mode header {
+    background: rgb(0, 0, 0);
+}
+/* Ensure paragraph text is black in light mode */
+#home-about p {
+    color: #000; /* Black text */
+}
+
+/* Dark mode: Change text color to white */
+.dark-mode #home-about p {
+    color: #f8f8f8;
+}
+.dark-mode h2 {
+    color: #ff98;
+}
+.dark-mode nav a {
+    color: #f8f8f8;
+}
+
+.dark-mode nav a:hover {
+    color: #ff9800;
+}
+
+.dark-mode nav a::after {
+    background: #ff9800;
+}
+
+/* Blog Grid */
+
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700,800,900');
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+body{
+	font-family: 'Poppins', sans-serif;
+	font-weight: 400;
+	font-size: 15px;
+	line-height: 1.7;
+	color: #fff;
+	background-color: #dbdce1;
+  margin: 0;
+  padding: 0;
+  overflow-x: none;
+}
+p{
+	font-family: 'Poppins', sans-serif;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 1.7;
+	color: #fff;
+  margin: 0;
+}
+.section-fluid-main{
+  position: relative;
+  display: block;
+  overflow: hidden;
+  width: calc(100% - 40px);
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 1140px;
+  padding: 5px 0;
+}
+.section-row{
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px;
+}
+.section-row:hover .section-col{
+  opacity: 0.1;
+}
+.section-col{
+  position: relative;
+  width: 100%;
+  -ms-flex: 0 0 50%;
+  flex: 0 0 50%;
+  max-width: 50%;
+  transition: opacity 250ms linear;
+}
+.section-row .section-col:hover{
+  opacity: 1;
+}
+.section{
+  position: relative;
+  display: block;
+  width: 100%;
+  overflow: hidden;
+  cursor: pointer;
+  padding: 15px;
+}
+.section-in{
+  position: relative;
+  display: block;
+  width: 100%;
+  overflow: hidden;
+  border-radius: 6px;
+  cursor: pointer;
+}
+.section-in img{
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: transform 250ms linear;
+}
+.section-col:hover .section-in img{
+  transform: scale(1.1) rotate(-3deg);
+}
+
+.hover-text{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  z-index: 100;
+  pointer-events: none;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-align-items: center;
+  -moz-align-items: center;
+  -ms-align-items: center;
+  align-items: center;
+  -webkit-justify-content: center;
+  -moz-justify-content: center;
+  -ms-justify-content: center;
+  justify-content: center;
+  -ms-flex-pack: center;
+  text-align: center;
+    -ms-flex-item-align: center;
+    align-self: center;
+  mix-blend-mode: difference;
+}
+.hover-text h2{
+  font-family: 'Poppins', sans-serif;
+  font-weight: 800;
+  font-size: 8vw;
+  line-height: 1;
+  color: #fff;
+  opacity: 0;
+  transform: scale(0.8);
+  transition: transform 250ms linear, opacity 250ms ease;
+}
+.section-col:hover + .hover-text h2{
+  opacity: 1;
+  transform: scale(1);
+}
+
+
+.logo {
+	position: fixed;
+	top: 25px;
+	left: 25px;
+	display: block;
+	z-index: 1000;
+	transition: all 250ms linear;
+}
+.logo img {
+	height: 26px;
+	width: auto;
+	display: block;
+	transition: filter 250ms 700ms linear;
+}
+
+
+@media (max-width: 767px) {
+  .section-col{
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+  .hover-text h2{
+    font-size: 12vw;
+  }
+}
+
+/* PLaylist Page */
+/* Playlist Page Styles - Scoped to #playlist */
+#playlist {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to bottom, #003366, #000);
+    color: white;
+    padding: 10px;
+    width: 100vw;  /* Ensure it covers the full viewport width */
+    min-height: 100vh;
+    margin: 0;  /* Remove any extra margins */
+    box-sizing: border-box; /* Ensure padding doesn’t affect width */
+}
+
+#playlist .container {
+    width: 100vw; /* Full viewport width */
+    max-width: 100%; /* Ensure no restriction */
+    margin: 0; /* Remove margins */
+    padding: 0; /* Remove padding */
+}
+
+#playlist h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#playlist table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+#playlist th, #playlist td {
+    padding: 15px;
+    text-align: left;
+}
+
+#playlist th {
+    background-color: #002244;
+}
+
+#playlist tr:nth-child(even) {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+#playlist tr:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+#playlist a {
+    color: #1db954;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#playlist a:hover {
+    text-decoration: underline;
+}
+
+
+.experience-grid {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px; /* Increase space between images */
+    padding: 40px 20px;
+    flex-wrap: wrap; /* Ensures responsiveness */
+}
+
+.experience-grid img {
+    width: 250px;
+    height: auto;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.experience-grid img:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.4);
+}
+
+/* Dark Mode */
+.dark-mode {
+    background: #000000;
+    color: #fff;
+}
+
+.dark-mode header,
+.dark-mode footer {
+    background: #000000;
+}
+
+.dark-mode nav a {
+    color: #f7c02c;
+}
+
+.dark-mode .blog-card {
+    background: #333;
+}
+
+.dark-mode .blog-card a {
+    background-color: #444;
+}
+
+.dark-mode .blog-card a:hover {
+    background-color: #f7c02c;
+}
+
+.dark-mode #contact {
+    background: #333;
+}
+
+.dark-mode .contact-container {
+    background: rgba(255, 255, 255, 0.1);
+}
+
+/* Footer */
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+    background-color: transparent;
+    text-align: center;
+    gap: 10px; /* Adds spacing between items */
+}
+
+/* Ensures the text and icons are inline */
+footer p, 
+footer div {
+    display: flex;
+    align-items: center;
+    margin: 0;
+    color: black;
+}
+
+/* Footer icons styling */
+.footer-icon {
+    color: black;
+    text-decoration: none;
+    margin-left: 10px;
+    font-size: 1.2em;
+}
+
+.footer-icon:hover,.dark-mode .footer-icon:hover {
+    color: #1db954; /* Spotify Green */
+} 
+/* Dark mode: Change text color to white */
+.dark-mode footer p {
+    color: white;
+}
+.dark-mode .footer-icon {
+    color: white;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    #home-about h2 {
+        font-size: 28px;
+    }
+
+    .intro, .about {
+        padding: 10px;
+    }
+
+    .image-grid {
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    }
+
+    .blog-card img {
+        height: 150px;
+    }
+
+    .contact-container {
+        width: 90%;
+    }
+}
+.dark-mode #contact {
+    background: #1a1a1a;
+}
+
+.dark-mode .contact-container {
+    background: rgba(50, 50, 50, 0.8);
+    color: #ccc;
+}
+
+.dark-mode input, 
+.dark-mode textarea {
+    background: rgba(80, 80, 80, 0.5);
+    color: #fff;
+}
+
+.dark-mode input:focus, 
+.dark-mode textarea:focus {
+    background: rgba(100, 100, 100, 0.7);
+    box-shadow: 0 0 10px rgba(200, 200, 200, 0.5);
+}
+
