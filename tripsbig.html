@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trips</title>
+    <link rel="stylesheet" href="hmb.css">
+    <style>
+        body {
+            background-color: #b1e7b9; /* Dark background */
+            color: #fff; /* Light text */
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .back-btn {
+            font-size: 2rem;
+            text-decoration: none;
+            color: white;
+            position: absolute;
+            top: 15px;
+            left: 15px;
+            cursor: pointer;
+            transition: transform 0.2s;
+        }
+
+        .back-btn:hover {
+            transform: scale(1.1);
+        }
+
+        .trips-grid {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+            margin-top: 50px;
+        }
+
+        .trips-grid a img {
+            width: 350px; /* Even bigger images */
+            height: auto;
+            border-radius: 10px;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .trips-grid a:hover img {
+            transform: scale(1.1);
+        }
+    </style>
+</head>
+<body>
+
+    <a href="hmb.html" class="back-btn">🔙</a>
+
+    <main>
+        <div class="trips-grid">
+            <a href="kerala.html">
+                <img src="kerala.jpg" alt="Kerala Blog">
+            </a>
+            <a href="trip.html">
+                <img src="trip.gif" alt="Trip">
+            </a>
+            <a href="puri.html">    
+                <img src="puri.jpg" alt="Puri">
+            </a>
+        </div>
+    </main>
+
+</body>
+</html>

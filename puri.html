@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Journey to Puri</title>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0; /* Remove default margin */
+            padding: 0;
+            font-family: 'Lora', sans-serif; /* Updated font */
+            color: #000000;
+            background: linear-gradient(to right, #f8f8f8, #b6ffe2); /* Crazy gradient background */
+            background-size: cover;
+            background-position: center;
+            overflow-x: hidden; /* Prevent horizontal overflow */
+            font-weight: 500;
+        }
+
+        /* Interactive Background */
+        .background {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            z-index: -1; /* Place behind other content */
+        }
+        .back-button {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background-color: beige;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: black;
+            font-size: 20px;
+            text-decoration: none;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            cursor: pointer;
+        }
+        .back-button:hover {
+            background-color: darkgoldenrod;
+        }
+        img {
+            width: 100%;
+            height: auto;
+        }
+        .circle {
+            position: absolute;
+            border-radius: 50%;
+            opacity: 0.8;
+            animation: float 6s ease-in-out infinite;
+        }
+
+        @keyframes float {
+            0% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-30px);
+            }
+            100% {
+                transform: translateY(0);
+            }
+        }
+
+        /* Generate multiple circles */
+        .circle:nth-child(1) {
+            background: rgba(255, 99, 71, 0.8); /* Increased opacity */
+            width: 100px;
+            height: 100px;
+            top: 20%;
+            left: 10%;
+            animation-duration: 4s;
+        }
+
+        .circle:nth-child(2) {
+            background: rgba(135, 206, 250, 0.8); /* Increased opacity */
+            width: 150px;
+            height: 150px;
+            top: 50%;
+            left: 30%;
+            animation-duration: 5s;
+        }
+
+        .circle:nth-child(3) {
+            background: rgba(255, 215, 0, 0.8); /* Increased opacity */
+            width: 200px;
+            height: 200px;
+            top: 70%;
+            left: 70%;
+            animation-duration: 6s;
+        }
+
+        .circle:nth-child(4) {
+            background: rgba(144, 238, 144, 0.8); /* Increased opacity */
+            width: 120px;
+            height: 120px;
+            top: 30%;
+            left: 80%;
+            animation-duration: 7s;
+        }
+
+        .container {
+        position: relative;
+        z-index: 1; /* Bring content above background */
+        padding: 10px; /* Adjust padding as needed */
+        width: 100%; /* Full width */
+        margin: 0 auto; /* Center the container */
+        background-color: transparent; /* White background with transparency */
+        box-shadow: none;
+        box-sizing: border-box; /* Include padding in width */
+        }
+
+        h1 {
+            color: #ff6347;
+            text-align: center;
+            font-family: 'Pacifico', cursive; /* Stylish font for heading */
+        }
+
+        h2 {
+            color: linear-gradient(to right, #3e0256, #489a79);;
+            font-family: 'Montserrat', sans-serif; /* Bold font for subheadings */
+        }
+
+        p {
+            margin: 10px 0;
+            line-height: 1.6; /* Increased line height for better readability */
+        }
+
+        .footer {
+            margin-top: 20px;
+            font-style: italic;
+            text-align: center;
+        }
+
+        img {
+            width: 100%; /* Ensure image is responsive */
+            height: auto;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="background">
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+    </div>
+    <a href="javascript:history.back()" class="back-button">←</a>
+    <img src="puri.jpg" alt="Puri" style="width: 100%; height: auto; border-radius: 10px;">
+
+    <div class="container">
+        <h1>They say every traveler has a destination that feels like home, and for me, that place is</h1>
+        <p><strong>credit goes to my bed! ❤</strong></p>
+        <p>not Puri actually, I haven’t yet found one!</p>
+        <p>Gotcha!!😂 Most of my idiot friends still to date, think Puri is puri, which is a food item in South India’s breakfast, when you go north, it becomes bature.Back with a new blog again 🙆‍♀️, Maintaining consistency even with one day late!</p>
+
+        <h2>The Journey:</h2>
+        <p>Every trip to Puri, as always, starts with me boarding a train to Bhubaneswar, armed with snacks, playlists, and a stubborn determination to secure the window seat.</p>
+        <p>I had to wake up early in the morning, get ready, take an early morning bus to the railway station, and board the train around 6-6:20 AM, because this badass train never comes on time, but somehow it takes me to the destination on time.</p>
+        <p>If you’ve never travelled by train in India, you’re missing out on an experience that’s equal parts comedy show and action movies. I used to have a front-row seat to all the action: kids playing hide-and-seek in the aisles (then) now all they do is scroll YouTube and Instagram😒, chai sellers yelling “Chaaaiii!” like it’s an Olympic sport, and a family unpacking enough food to feed an entire bogie.</p>
+        <p>I miss the days when the “Where is my train?” app didn’t exist, and I’d rely on my sleepy senses to recognize stations by the food sellers’ calls and the distinct smells in the air.</p>
+        <p>It’s like this —</p>
+        <ul>
+            <li>Chana seller comes at Ichapuram station;</li>
+            <li>Jhalmuri — Brahmapur;</li>
+            <li>Meeta Doi — Balugaon;</li>
+            <li>Singhda, aluchap — Khorda;</li>
+            <li>Pani Bottle — being a common bgm everywhere.</li>
+        </ul>
+        <p>Damn, those were the days. Now IRCTC was so commercialized, I hardly see those snacks in trains.</p>
+
+        <h2>SPECIAL MENTION: CHILKA LAKE</h2>
+        <p>But the real magic begins when the train approaches Chilika Lake. There are only 2 reasons why I travel in train from my hometown to Bhubaneshwar.</p>
+        <ol>
+            <li>To watch Chilika Lake right in front of my eyes.</li>
+            <li>I can’t afford any other transmode. 😞</li>
+        </ol>
+        <p>It was like nature decided to give me a free IMAX screening. The train slows down, and so did time — it was one of those endless rare moments when even the most chaotic passenger compartments fall silent, everyone was mesmerized by the view.</p>
+        <p>The only handy pic of Chilika after my phone broke!</p>
+
+        <h2>To PURI:</h2>
+        <p>Once I reach Bhubaneshwar, the real adventure begins. I step out of the station sharp at 11:00 A.M, craving my usual Dahi Bara and Aloo Dum at my usual place (Initially it used to be at reliance board, now they changed locations😭).</p>
+
+        <p>Here is a caution, Please take my suggestion!</p>
+        <p>As you walk out of the station, you’ll meet that persistent auto-rickshaw driver who’s determined to make you his lifelong customer. Negotiations begin, and before you know it, you’re speeding off to the coast, dodging cows, scooters, dogs. Don’t do that mistake, I repeat that. Even if you are a group, I highly recommend to take a bus. There are so many “MO Buses” all the time, which can take you to Puri. All you have to do is, step out of station and go to the bus stand. How fast you reach Puri? entirely depends on your horoscope that day, the driver speed, and the traffic at Ram Mandir!!</p>
+
+        <p>As suggested by me to myself from past experiences, I hop on a bus bound for Puri, which could easily be mistaken for a moving carnival. People were exchanging everything — seats, snacks, life stories — with equal fervor. A baby in the backseat provided the soundtrack with a medley of giggles.</p>
+
+        <p>Once you reach the Puri bus stand, if you are a solo backpacker, I suggest you to move your ass, and walk off. It's around 1.5 Kms to temple, and you can go in 15 mins. On the way, you will see the vibrant streets, where shops overflow with colorful handicrafts, souvenirs, and sweet treats like khaja. If you are a family/group of friends, you can’t bargain with auto drivers at all, because they have their fixed rates written on the walls. Last time when I went in April, for 3, the auto charge was 100. And they will only take you to half distance, because the other half is a one way. There is a shortcut, but no one takes it tho.</p>
+
+        <h2>Once you reach the Temple:</h2>
+        <p>You need to leave your accessories including mobile and your atheist ass. You will find many such counters where you can pay money and keep them. The temple doesn’t offer counters. 
+        <p>Why Because </p><p>Then they need to maintain a warehouse</p><p> bigger than the temple storing all those.</p><p> Damn, my rapping skills 🔥.</p>
+
+        <h2>The Jagannath Temple:</h2>
+        <p>Once you enter the temple, if it’s peak time the first temple you see is not the end, you again have to walk a near mile to reach the main temple. The temple is awe-inspiring, but navigating the crowd feels like a live version of Indian population in a single screen.</p>
+        <p>Inside the main temple, there would be hell million lot of things you experience in that 3–4 mins, I would say.</p>
+        <p>What exactly happens inside the temple?</p>
+        <p>You will get smashed, crushed, clashed, pushed and you will only get 2 secs in those 3–4 mins to watch the idols, pray, cry, shout, give dakshan, drink teertham and remaining time to show your pushing skills.</p>
+        <p>As an experienced visitor, to be a pro at surviving in the main temple follow these:</p>
+        <ol>
+            <li>Stay on the sides, you gotta hold those side sticks so tight, to move fast.</li>
+            <li>Have decent height to watch the idols.</li>
+            <li>While praying, people lift their hands and chant Jai Jagannath, that’s the moment you gotta hold the floor with your foot so strong so that you won’t get under people’s feet. Pass all your body weight to your legs and foot.</li>
+        </ol>
+        <p>But those 2 secs can teach you a lot honestly💫. In the process, you jostle, pray, and occasionally dodge a stray pigeon that seems oddly judgmental, kindly ignore that, they judge everyone. The temple priests are nothing short of efficient entrepreneurs. “Madam, Rs. 500 for special blessings. Don’t get a special blessing, god sees everyone the same. Once you go for it, it’s not the same, you gotta pay them 500.</p>
+
+        <p>The temple mahaprasad, though, is the real deal, it is a culinary delight, though, and after one bite, you’ll understand why it’s revered as a divine experience. You come for divine blessings and stay for the delicious rice, dal, and vegetables cooked in earthen pots. Puri holds a lot of mysteries to me. A visit to Puri is incomplete without experiencing the grandeur of the Jagannath Temple.</p>
+
+        <p>Puri’s streets are a riot of colors and sounds. Shops burst with handicrafts, souvenirs, and the irresistible aroma of khaja — a crispy, sugary delight that’s as addictive as it sounds.</p>
+
+        <h2>The Beach: Shenanigans</h2>
+        <p>Puri’s golden beach is a canvas of contrasts. The sky turns shades of orange and pink that no Instagram filter could replicate. For a moment, it was just me, the waves, and the horizon until beachside snacks smell calls me. The food vendors, though, are my real heroes. The spicy gupchup, crispy aloo chop, and fresh coconut water have magical properties — they can make you forget.</p>
+        <p>While buying shell items near the beach, my bargaining skills are put to the test here, though I usually walk away convinced I’ve scored a great deal (until I see the same item cheaper at the next stall).</p>
+
+        <p>The same day, I usually take the train at night from Bhubaneshwar railway station to home and back to reality.</p>
+
+        <h2>Why I visit Puri</h2>
+        <p>Puri isn’t just about beaches; it’s also the spiritual epicenter. The Jagannath Temple, with its towering spire and rich history, is a place where devotion meets architectural grandeur. As you join the throng of pilgrims, you might find yourself silently praying for blessings — and perhaps a little personal space. For me, it’s more of a childhood go-to place, I used to visit Puri often. The familiar sights, smells, and sounds feel like old friends.</p>
+
+        <p>What I cherish most about Puri is that serenity isn’t something you just find here; it’s something you actively create. Whether it’s while walking through the crowded lanes, standing at the temple, or gazing out over the beach at sunset, every visit is a series of unforgettable moments. Each visit leaves a mark on my soul, and when I leave, the magic of Puri stays with me, quietly lulling me back whenever life gets too loud.</p>
+
+        <p>I didn’t mention about architecture and mysteries in this blog, because I can see them everywhere. And Puri’s architecture is at its finest, and still holds its mysteries. This blog is more of a realistic experience.</p>
+
+        <p class="footer">Ending the blog at 21:49 PM IST, stay tuned for the next one. Until then Pray and slay!!</p>
+    </div>
+
+</body>
+</html>
