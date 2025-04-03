@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>So-Called Self Help</title>
+    <style>
+        body {
+            background-color: #e0f7fa; /* Light background for better aesthetics */
+            color: #333; /* Dark text for better readability */
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .back-btn {
+            font-size: 2rem;
+            text-decoration: none;
+            color: #333; /* Dark text for the back button */
+            position: absolute;
+            top: 15px;
+            left: 15px;
+            cursor: pointer;
+            transition: transform 0.2s;
+        }
+
+        .back-btn:hover {
+            transform: scale(1.1);
+        }
+
+        .image-grid {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+            margin-top: 50px;
+        }
+
+        .image-grid a img {
+            width: 350px; /* Default size for images */
+            height: auto;
+            border-radius: 10px;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        /* Specific size for the landscape image */
+        .image-grid a img.guide {
+            width: 450px; /* Increased size for landscape image */
+        }
+
+        .image-grid a:hover img {
+            transform: scale(1.1);
+        }
+    </style>
+</head>
+<body>
+
+    <a href="hmb.html" class="back-btn">🔙</a>
+
+    <main>
+        <div class="image-grid">
+            <a href="3am.html">
+                <img src="3am.jpg" alt="3 AM">
+            </a>
+            <a href="journaling.html">
+                <img src="Journaling.png" alt="Journaling">
+            </a>
+            <a href="zero.html">
+                <img src="Zero.gif" alt="Zero">
+            </a>
+            <a href="girl.html">
+                <img src="guide.png" alt="Guide" class="guide"> <!-- Added class for specific size -->
+            </a>
+        </div>
+    </main>
+
+</body>
+</html>
