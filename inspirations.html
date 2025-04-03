@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>inspirations</title>
+    <link rel="stylesheet" href="hmb.css">
+    <style>
+        /* Hexagon/Diagonal Line Background */
+        body {
+            background-color: #000000;
+            background-image: url('hexagon-pattern.svg'); /* Replace with your SVG */
+            background-size: 150px 150px;
+            background-blend-mode: overlay;
+            color: #fff;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 20px;
+            overflow: hidden;
+        }
+
+        /* Back Button */
+        .back-btn {
+            font-size: 2rem;
+            text-decoration: none;
+            color: white;
+            position: absolute;
+            top: 15px;
+            left: 15px;
+            cursor: pointer;
+            transition: transform 0.2s, color 0.3s ease-in-out;
+        }
+
+        .back-btn:hover {
+            transform: scale(1.1);
+            color: #ffdd57;
+        }
+
+        /* inspiration Grid */
+        .inspiration-grid {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 30px;
+            margin-top: 20px;
+            position: relative;
+        }
+
+        /* Hover Effect */
+        .inspiration-grid a:hover {
+            transform: scale(1.05);
+            box-shadow: 0 10px 30px rgba(255, 223, 127, 0.5);
+        }
+    </style>
+</head>
+<body>
+
+    <a href="hmb.html" class="back-btn">🔙</a>
+
+    <main>
+        <div class="inspiration-grid">
+            <a href="rcb.html">
+                <img src="RCB.JPG" alt="GG Blog">
+            </a>
+        </div>
+    </main>
+
+</body>
+</html>
