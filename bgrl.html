@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bglr</title>
+    <link rel="stylesheet" href="hmb.css">
+    <style>
+        body {
+            background-color: #364e54; /* Dark background */
+            color: #fff; /* Light text */
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .back-btn {
+            font-size: 2rem;
+            text-decoration: none;
+            color: white;
+            position: absolute;
+            top: 15px;
+            left: 15px;
+            cursor: pointer;
+            transition: transform 0.2s;
+        }
+
+        .back-btn:hover {
+            transform: scale(1.1);
+        }
+
+        .bglr-grid {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+            margin-top: 50px;
+        }
+
+        .bglr-grid a img {
+            width: 350px; /* Even bigger images */
+            height: auto;
+            border-radius: 10px;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .bglr-grid a:hover img {
+            transform: scale(1.1);
+        }
+    </style>
+</head>
+<body>
+
+    <a href="hmb.html" class="back-btn">🔙</a>
+
+    <main>
+        <div class="bglr-grid">
+            <a href="flats.html">
+                <img src="flatbglr.png" alt="Kerala Blog">
+            </a>
+        </div>
+    </main>
+
+</body>
+</html>
