@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Experiences</title>
+    <link rel="stylesheet" href="hmb.css">
+    <style>
+        /* Hexagon/Diagonal Line Background */
+        body {
+            background-color: #1a1a2e;
+            background-image: url('hexagon-pattern.svg'); /* Replace with your SVG */
+            background-size: 150px 150px;
+            background-blend-mode: overlay;
+            color: #fff;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 20px;
+            overflow: hidden;
+        }
+
+        /* Back Button */
+        .back-btn {
+            font-size: 2rem;
+            text-decoration: none;
+            color: white;
+            position: absolute;
+            top: 15px;
+            left: 15px;
+            cursor: pointer;
+            transition: transform 0.2s, color 0.3s ease-in-out;
+        }
+
+        .back-btn:hover {
+            transform: scale(1.1);
+            color: #ffdd57;
+        }
+
+        /* Experience Grid */
+        .experience-grid {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 30px;
+            margin-top: 50px;
+            position: relative;
+        }
+
+        /* Card Styles */
+        .experience-grid a {
+            width: 320px;
+            height: 220px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 20px;
+            box-shadow: 0 8px 20px rgba(255, 255, 255, 0.1);
+            transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+            backdrop-filter: blur(10px);
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        /* Hover Effect */
+        .experience-grid a:hover {
+            transform: scale(1.05);
+            box-shadow: 0 10px 30px rgba(255, 223, 127, 0.5);
+        }
+    </style>
+</head>
+<body>
+
+    <a href="hmb.html" class="back-btn">🔙</a>
+
+    <main>
+        <div class="experience-grid">
+            <a href="gg.html">
+                <img src="gg.png" alt="GG Blog">
+            </a>
+            <a href="fyp.html">
+                <img src="FYP.gif" alt="Final Year Project">
+            </a>
+            <a href="trust.html">
+                <img src="trust.png" alt="Trust Blog">
+            </a>
+        </div>
+    </main>
+
+</body>
+</html>
