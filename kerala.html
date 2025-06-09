@@ -51,6 +51,27 @@
             text-align: justify;
             font-size: 25PX;
         }
+        .back-button {
+            position: fixed;      /* Make it fixed to the viewport */
+            top: 20px;
+            left: 20px;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background-color: #3d6403;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            font-size: 20px;
+            text-decoration: none;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            cursor: pointer;
+            z-index: 1000;        /* Ensure it's above everything else */
+        }
+        .back-button:hover {
+            background-color: #0e0e0e;
+        }
 
         @media (max-width: 768px) {
             .content {
@@ -60,7 +81,8 @@
     </style>
 </head>
 <body>
-
+    <!-- Back Button at the top of the page -->
+    <a href="javascript:history.back()" class="back-button">←</a>
     <div class="hero"></div>
 
     <div class="content">
