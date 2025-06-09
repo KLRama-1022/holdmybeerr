@@ -23,6 +23,28 @@
             padding: 20px;
             overflow-x: hidden;
         }
+        /* Back Button Styling */
+        .back-button {
+            position: fixed;
+            top: 20px;
+            left: 20px;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background-color: #000;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #fff;
+            font-size: 20px;
+            text-decoration: none;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+            cursor: pointer;
+            z-index: 1000;
+        }
+        .back-button:hover {
+            background-color: #222;
+        }
 
         .container {
             max-width: 900px;
@@ -71,6 +93,8 @@
     </style>
 </head>
 <body>
+        <!-- Back Button at the top of the page -->
+    <a href="javascript:history.back()" class="back-button">←</a>
     <div class="floating-balls"></div>
 
     <div class="container">
